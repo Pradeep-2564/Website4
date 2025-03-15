@@ -1,11 +1,10 @@
-/* General Navbar Styling */
 nav {
-    background-color: #333; /* Dark background for navbar */
+    background-color: #333; 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
 
   nav .logo {
@@ -75,7 +74,7 @@ nav {
   
   nav .nav-info ul li a:hover {
     background-color: #f0a500; 
-    color: #333;
+    color: black;
   }
   
   nav .nav-info ul li.dropdown {
@@ -87,7 +86,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: black;
     border-radius: 4px;
     min-width: 200px;
     z-index: 10;

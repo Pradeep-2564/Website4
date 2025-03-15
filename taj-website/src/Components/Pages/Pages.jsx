@@ -18,7 +18,7 @@ import Bakeries from '../Restaurents/Bakeries'
 import Clubs from '../Restaurents/Clubs'
 import Wineries from '../Restaurents/Wineries'
 import GhostKitchens from '../Restaurents/GhostKitchens'
-import Footer from '../Footer/Footer'
+
 
 const Pages = () => {
 
