@@ -1,0 +1,143 @@
+/* General Navbar Styling */
+nav {
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo img {
+    width: 100px; 
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-left: 20px;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    color: #333;
+    width: 35vw;
+  }
+  
+  .search svg {
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search svg:hover {
+    color: #f0a500;
+  }
+  
+  nav .nav-info ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav .nav-info ul li {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  nav .nav-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  nav .nav-info ul li a:hover {
+    background-color: #f0a500; 
+    color: #333;
+  }
+  
+  nav .nav-info ul li.dropdown {
+    position: relative;
+  }
+  
+  nav .nav-info ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 10;
+  }
+  
+  nav .nav-info ul li:hover .dropdown-content {
+    display: block; 
+  }
+  
+  nav .nav-info ul li .dropdown-content li {
+    padding: 10px;
+  }
+  
+  nav .nav-info ul li .dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav .nav-info ul li .dropdown-content li a:hover {
+    background-color: #f0a500; 
+  }
+  
+  .active-link {
+    color: #f0a500;
+    font-weight: bold;
+  }
+  
+  .no-active {
+    color: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-info ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-info ul li {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .search input[type="text"] {
+      width: 100%; /* Make search input take up full width on mobile */
+    }
+  }
+  
