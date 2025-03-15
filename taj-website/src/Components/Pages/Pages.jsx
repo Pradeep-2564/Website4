@@ -19,7 +19,6 @@ import Clubs from '../Restaurents/Clubs'
 import Wineries from '../Restaurents/Wineries'
 import GhostKitchens from '../Restaurents/GhostKitchens'
 
-
 const Pages = () => {
 
   const router = createBrowserRouter([

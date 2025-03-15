@@ -1,12 +1,12 @@
 nav {
-    background-color: #333; 
+    background-color:transparent;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
-  
-
   nav .logo {
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@ nav {
     }
   
     .search input[type="text"] {
-      width: 100%; /* Make search input take up full width on mobile */
+      width: 100%; 
     }
   }
   

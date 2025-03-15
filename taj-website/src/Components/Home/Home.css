@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: auto; 
+  }
+    .image-wrapper {
+      position: relative;
+      width: 100%; 
+      
+    }
+    .image {
+      
+      width: 100%;
+      height: 700px;
+      display: block;
+      background-position: center;
+      background-size: cover;
+      animation: fadeIn 1s ease-in forwards;
+      
+    }
+    .corner-button {
+      position: absolute;
+      font-size: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    } 
+    .bottom-left {
+      bottom: 350px;
+      left: 10px;
+    }
+    
+    .bottom-right {
+      bottom: 350px;
+      right: 10px;
+    }
+    .corner-button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+.greeting {
+  background-color: #f4f4f4; 
+  padding: 50px 20px; 
+  text-align: center;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 80%; 
+}
+
+.greeting h1 {
+  font-size: 2rem; 
+  font-family: 'Georgia', serif; 
+  color: #333; 
+  font-weight: normal;
+  line-height: 1.6; 
+  font-style: italic; 
+  padding: 20px;
+  background-color: #fff; 
+  border-left: 5px solid #2c3e50; 
+  margin: 0 auto; 
+}
+
+
+.bio-content {
+  
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.description {
+  color: darkblue;
+  max-width: 800px;
+  margin: 0 auto; 
+  background-color: rgba(254, 253, 253, 0.696); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.203); 
+}
+
+.description h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 1.1rem;
+  color: #555; 
+  line-height: 1.8;
+  text-align: justify; 
+  margin-bottom: 0;
+}
+
+.description b {
+  font-weight: bold;
+  color: #2c3e50; 
+}
+
+
+
+.quotes-sec {
+  background-image: url('/Images/bgc.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  min-height: 100vh; 
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.quotes-content {
+  background-color: rgba(241, 235, 235, 0.358); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.342);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.quotes-content i {
+  font-style: italic;
+  color: #151206; 
+}
+
+.quotes-content:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.rest-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 20px;
+  gap: 20px;
+}
+
+
+.card, .card2 {
+  display: flex;
+  flex-direction: column;
+  width: 48%; 
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover, .card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0; 
+}
+
+.info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+  .quotes-content {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description h1 {
+    font-size: 2rem; 
+  }
+
+  .description p {
+    font-size: 1rem; 
+  }
+  .greeting h1 {
+    font-size: 1.5rem; 
+  }
+  .card, .card2 {
+    width: 100%; 
+  }
+
+  .rest-info {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .quotes {
+    grid-template-columns: 1fr; 
+    padding: 10px;
+  }
+
+  .description {
+    padding: 15px;
+  }
+
+  .description h1 {
+    font-size: 1.8rem; 
+  }
+
+  .description p {
+    font-size: 0.9rem; 
+  }
+  .greeting h1 {
+    font-size: 1.2rem;
+  }
+}
+
+    
