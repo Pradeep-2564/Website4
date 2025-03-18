@@ -140,7 +140,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <h1> What We Offer you? </h1>
+      <h1 style={{textAlign:"center", marginTop:"10px"}}> What We Offer you? </h1>
       <section className="rest-info">
         
         <div className="card">
@@ -150,7 +150,7 @@ const Home = () => {
            <div className="card-content">
               <h4>Hotels For Stay</h4>
               <p>
-                we believe in creating a seamless and exceptional experience for
+                We believe in creating a seamless and exceptional experience for
                 every guest. Our offerings are designed to ensure your stay is
                 both comfortable and unforgettable. Here's what you can expect
                 when you choose us for your stay
