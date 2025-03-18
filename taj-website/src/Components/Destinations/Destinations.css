@@ -265,3 +265,57 @@
     width: 100%;
   }
 }
+
+.place-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  width: 76%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+.place-cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-content h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content span {
+  font-size: 0.95em;
+  color: #777;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.book-btn button {
+  background-color: #d5b041;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .place-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
