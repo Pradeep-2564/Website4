@@ -107,7 +107,7 @@ const Bars = () => {
             <h5>--The Green Garden--</h5>
             <p>
               A crisp and herbaceous cocktail made with gin, cucumber, basil,
-              and lime, bringing the garden to your glass.
+              and lime.
             </p>
             <p>Rs: 1250/-</p>
             <button>Add to Cart</button>
@@ -122,7 +122,7 @@ const Bars = () => {
             <h5>--Lavender Lemonade--</h5>
             <p>
               A delicate and fragrant blend of lavender syrup, lemon juice, and
-              gin, offering a floral, refreshing taste with a citrus kick.
+              gin, offering a floral, refreshing taste.
             </p>
             <p>Rs: 1050/-</p>
             <button>Add to Cart</button>
