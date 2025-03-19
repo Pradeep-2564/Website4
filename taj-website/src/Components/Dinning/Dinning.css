@@ -1,5 +1,3 @@
-
-
   .hero {
     width: 100%;
   }
@@ -75,4 +73,80 @@
 .content-item {
     display: block;
     padding: 20px 0;
+}
+
+.gift-container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  /* margin-bottom: 30px; */
+}
+.gift-head p{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+.gift-cards {
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-gift {
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.card-img {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card-content p {
+  font-size: 2.3em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-content span {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.5;
+  display: block;
+  padding: 15px;
+}
+
+.card-gift.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .card-gift {
+    width: 100%;
+    flex-direction: column; 
+  }
+
+  .card-gift.reverse {
+    flex-direction: column; 
+  }
 }
