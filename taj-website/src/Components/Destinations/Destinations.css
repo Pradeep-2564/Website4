@@ -1,0 +1,321 @@
+.hero-sec {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    position: relative;
+    top: 20vh;
+}
+  
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.text-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.text-cont hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+}
+  
+.text-cont span {
+    position: relative;
+    padding: 5px 0px;
+    width: 28vw;
+}
+  
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .text-cont span {
+      font-size: 1.2rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .hero-sec {
+      height: 60vh; 
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .text-cont span {
+      font-size: 1rem;
+    }
+}
+  
+/* General Styles for Hero Main Section */
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.main-text {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.greet-titel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.greet-titel hr {
+  width: 50px;
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.text-titel span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.greet-titel h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+#titel {
+  font-size: 2rem;
+}
+
+.greet-titel span {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .text-titel span {
+    font-size: 2rem;
+  }
+
+  .greet-titel h2 {
+    font-size: 2rem;
+  }
+
+  .greet-titel span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-main {
+    padding: 40px 15px;
+  }
+
+  .text-titel span {
+    font-size: 1.5rem;
+  }
+
+  .greet-titel h2 {
+    font-size: 2rem;
+  }
+
+  .greet-titel span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-main {
+    padding: 30px 10px;
+  }
+
+  .text-titel span {
+    font-size: 1.2rem;
+  }
+
+  .greet-titel h2 {
+    font-size: 1.5rem;
+  }
+
+  .greet-titel span {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles for Search Filter */
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.search-bar {
+  width: 30%;
+}
+
+.search-bar input:focus {
+  border-color: #ccc;
+}
+
+.brands, .themes {
+  width: 20%;
+}
+
+.brands select, .themes select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.brands select:focus, .themes select:focus {
+  border-color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-filter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .search-bar input,
+  .brands select,
+  .themes select {
+    width: 100%;
+  }
+}
+
+.place-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  width: 76%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+.place-cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-content h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content span {
+  font-size: 0.95em;
+  color: #777;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.book-btn button {
+  background-color: #d5b041;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .place-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
