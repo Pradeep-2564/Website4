@@ -43,6 +43,31 @@ const Dinning = () => {
           </div>
         </div>
       </div>
+      <div className="gift-container">
+        <div className="gift-head">
+          <p>Giftable Dining Delights</p>
+        </div>
+        <div className="gift-cards">
+          <div className="card-gift">
+            <div className="card-img">
+              <img src="https://cdn.sanity.io/images/ocl5w36p/prod3/23ee30e79f9dca4e1ccb916f9ebd30ed192956a7-1400x979.jpg?w=768&auto=format&dpr=2" alt="img" />
+            </div>
+            <div className='card-content'>
+              <p>Hampers</p>
+              <span>A collection of thoughtfully curated hampers that are designed to convey your warmest thoughts and greetings with an array of gour...</span>
+            </div>
+          </div>
+          <div className="card-gift">
+            <div className="card-content">
+            <p>Taj Experiences Gift Cards</p>
+            <span>Offering a range of exclusive and exquisite dining experiences, Taj Experiences Gift Cards make for a perfect present for your..</span>
+            </div>
+            <div className="card-img">
+              <img src="https://cdn.sanity.io/images/ocl5w36p/prod3/29ea05d58761635f5ee2ff674ea7d1637840a116-700x480.jpg?w=768&auto=format&dpr=2" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
