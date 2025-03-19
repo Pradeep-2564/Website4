@@ -1,0 +1,94 @@
+.bakeries {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/Images/ba-bgc.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .bakery-description {
+    width: 100%;
+    background-color: rgba(245, 242, 242, 0.071);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(74, 73, 73, 0.425);
+    margin-bottom: 30px;
+    margin-top: 130vh;
+  }
+  
+  .bakery-description h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .bakery-card {
+    width: 350px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .bakery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bakery-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .bakery-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .bakery-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .bakery-content p {
+    font-size: 1rem;
+    color: #4c0505;
+    margin-bottom: 15px;
+  }
+  
+  .bakery-content button {
+    background-color: #544e45;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .bakery-content button:hover {
+    background-color: #8a7f04;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .bakery-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bakery-card {
+      width: 100%;
+    }
+  }
+  
