@@ -147,7 +147,7 @@ const Home = () => {
           <div className="info-img">
             <img src="/Images/hotel1.jpg" alt="Hotels" />
           </div>
-           <div className="card-content">
+           <div className="card-content1">
               <h4>Hotels For Stay</h4>
               <p>
                 We believe in creating a seamless and exceptional experience for
@@ -163,7 +163,7 @@ const Home = () => {
           <div className="info-img">
             <img src="/Images/restaurant.jpg" alt="Restaurents" />
           </div>
-            <div className="card-content">
+            <div className="card-content1">
             <h4>Premium Restaurants</h4>
               <p>
                 Our restaurant is designed to offer a cozy, welcoming atmosphere
@@ -181,7 +181,7 @@ const Home = () => {
           <div className="info-img">
             <img src="/Images/destination.jpg" alt="Destinations" />
           </div>
-            <div className="card-content">
+            <div className="card-content1">
               <h4>Worldclass Destinations</h4>
               <p>
                 Our rooms and suites are crafted with elegance and comfort in
@@ -198,7 +198,7 @@ const Home = () => {
           <div className="info-img">
             <img src="/Images/dinning.jpg" alt="Dinning Halls" />
           </div>
-            <div className="card-content">
+            <div className="card-content1">
               <h4>5 ⭐ Dinning Halls</h4>
               <p>
                 Indulge in an array of culinary delights at our in-house
