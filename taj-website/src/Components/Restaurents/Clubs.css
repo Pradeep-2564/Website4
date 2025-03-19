@@ -1,0 +1,129 @@
+.Clubes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/Images/cl-bgc.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .clubes-description {
+    width: 100%;
+    background-color: rgba(245, 242, 242, 0.071);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(74, 73, 73, 0.425);
+    margin-bottom: 30px;
+    margin-top: 80vh;
+  }
+  
+  .clubes-description h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e7e4a4;
+    line-height: 1.5;
+    margin-top: 0 auto;
+  }
+
+  .clubes-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .clubes-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .clubes-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .clubes-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .clubes-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .clubes-content p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .clubes-content button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .clubes-content button:hover {
+    background-color: #218838;
+  }
+
+  @media screen and (max-width: 768px) {
+    .Clubes {
+      padding: 10px;
+    }
+  
+    .clubes-description h3 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  
+    .clubes-card {
+      width: 90%;
+    }
+  
+    .clubes-card:hover {
+      transform: translateY(-3px);
+    }
+  
+    .clubes-content h5 {
+      font-size: 1.1rem;
+    }
+  
+    .clubes-content p {
+      font-size: 0.9rem;
+    }
+  
+    .clubes-content button {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .Clubes {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .clubes-card {
+      width: 45%;
+      margin: 20px;
+    }
+  }
+  

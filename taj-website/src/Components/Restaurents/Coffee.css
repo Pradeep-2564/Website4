@@ -1,0 +1,106 @@
+
+.coffes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+    background-image:url("/Images/c-bgc.jpg"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .coffee-description {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 145vh;
+  }
+  
+  .coffee-description h3 {
+    font-size: 1.4rem;
+    color: #040404;
+    font-weight: 400;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(59, 57, 57, 0.178);
+  }
+  
+  .coffee-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 380px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .coffee-card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  }
+  
+  /* Styling the image inside each coffee card */
+  .coffee-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+  }
+  
+  /* Content inside each coffee card */
+  .coffee-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .coffee-content h5 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .coffee-content p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+    font-weight: 400;
+  }
+  
+  .coffee-content p:first-child {
+    font-weight: 500;
+  }
+  
+  /* Button styling */
+  .coffee-content button {
+    background-color: #6c757d; /* Muted button color */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .coffee-content button:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .coffes {
+      padding: 15px;
+    }
+  
+    .coffee-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
