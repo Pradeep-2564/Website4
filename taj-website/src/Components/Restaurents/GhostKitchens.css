@@ -1,0 +1,152 @@
+.ghost-kitchens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/Images/k-bgc.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .kitchen-description {
+    width: 100%;
+    background-color: rgba(245, 242, 242, 0.071);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(74, 73, 73, 0.425);
+    margin-bottom: 30px;
+    margin-top: 105vh;
+  }
+  
+  .kitchen-description h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #585f02;
+    line-height: 1.5;
+    margin-top: 0 auto;
+  }
+
+  .kitchen-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .kitchen-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .kitchen-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .kitchen-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .kitchen-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .kitchen-content p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .kitchen-content button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .kitchen-content button:hover {
+    background-color: #218838;
+  }
+
+  @media screen and (max-width: 768px) {
+    .kitchen {
+      padding: 10px;
+    }
+  
+    .kitchen-description h3 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  
+    .kitchen-card {
+      width: 90%;
+    }
+  
+    .kitchen-card:hover {
+      transform: translateY(-3px);
+    }
+  
+    .kitchen-content h5 {
+      font-size: 1.1rem;
+    }
+  
+    .kitchen-content p {
+      font-size: 0.9rem;
+    }
+  
+    .kitchen-content button {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .wineries {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .kitchen-card {
+      width: 45%;
+      margin: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kitchen-description {
+      font-size: 14px;
+    }
+  
+    .kitchen-content h5 {
+      font-size: 16px;
+    }
+  
+    .kitchen-content p {
+      font-size: 12px;
+    }
+  
+    .kitchen-content button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .kitchen-card {
+      margin: 5px 0;
+    }
+  }
+  
