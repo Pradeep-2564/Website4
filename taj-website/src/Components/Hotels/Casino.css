@@ -1,0 +1,69 @@
+.business-head {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.busi-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  
+.busi-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    position: relative;
+    top: 20vh;
+}
+  
+.busi-content h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+  
+.text-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.text-cont span {
+    position: relative;
+    padding: 5px 0px;
+}
+
+.card-content button {
+    width: 10vw;
+    padding: 12px;
+    margin-left: 10px;
+    background-color: rgb(11, 103, 178);
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-content button:hover{
+    cursor: pointer;
+    background-color: blue;
+    transform: translateY(-3px);
+}
