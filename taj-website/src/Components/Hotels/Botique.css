@@ -1,0 +1,175 @@
+.botique {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-botique img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .botique-head {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .botique-head h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .botique-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    margin-left: 10vw;
+  }
+  
+  .botique-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .botique-img {
+    flex: 1;
+    height: 100%;
+    max-width: 40%;
+  }
+  
+  .botique-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .botique-data {
+    flex: 2;
+    padding: 20px;
+    max-width: 60%;
+  }
+  
+  .botique-data p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  #botique-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Icons Styling */
+  .botique-data .MuiSvgIcon-root {
+    color: #6a1b9a;
+    margin-right: 8px;
+  }
+
+  .botique-data span {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+  }
+  
+  .botique-data p, .botique-data span {
+    margin-bottom: 10px;
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .section-container .botique-info {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    .botique-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .botique-info {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .botique-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .botique-data {
+      max-width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #botique-name {
+      font-size: 22px;
+    }
+  
+    .botique-data p {
+      font-size: 14px;
+    }
+  
+    .botique-data span {
+      font-size: 12px;
+      color: #777;
+    }
+  
+    .botique-data .MuiSvgIcon-root {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .botique-container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .botique-head h1 {
+      font-size: 26px;
+    }
+  
+    .botique-info {
+      padding: 10px;
+    }
+  
+    #botique-name {
+      font-size: 18px;
+    }
+  
+    .botique-data p {
+      font-size: 12px;
+    }
+  
+    .botique-data span {
+      font-size: 10px;
+    }
+  }
+  
